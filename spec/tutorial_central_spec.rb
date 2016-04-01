@@ -5,7 +5,27 @@ describe TutorialCentral do
     expect(TutorialCentral::VERSION).not_to be nil
   end
 
-  it 'does something useful' do
-    expect(false).to eq(true)
+  it 'offers the option of listing categories or recent tutorials' do
+    pending
+  end
+
+  it 'reprompts user after incorrect input' do
+    pending
+  end
+
+  it 'lists all recent tutorials' do
+    pending
+  end
+
+  it 'lists all tutorials in a category' do
+    pending
+  end
+
+  it 'responds to user tutorial choice by displaying url' do
+    pending
+  end
+
+  it 'asks user if they would like to return to main menu or quit' do
+    pending
   end
 end
