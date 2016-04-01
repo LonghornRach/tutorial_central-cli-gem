@@ -3,10 +3,12 @@ module TutorialCentral
 
     def self.scrape_categories(url)
       site = Nokogiri::HTML(open(url))
-      categories = []
+      categories = {}
       rows = site.css("tr.search_blocks")
       rows.each do |row|
-        categories << row.css("a").text.strip
+        title = row.css("a").text.strip
+        url = row.css("a @href").text
+        categories[title] = url
       end
       categories      
     end
