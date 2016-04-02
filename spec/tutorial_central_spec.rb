@@ -1,6 +1,7 @@
 require 'spec_helper'
 
 describe TutorialCentral do
+
   it 'has a version number' do
     expect(TutorialCentral::VERSION).not_to be nil
   end
@@ -14,7 +15,8 @@ describe TutorialCentral do
   end
 
   it 'lists all recent tutorials' do
-    pending
+    latest = "http://hackr.io/latest"
+    expect(TutorialCentral::Scraper.new.scrape_tutorials(latest).class).to eq Array
   end
 
   it 'lists all tutorials in a category' do

@@ -4,6 +4,8 @@ require "tutorial_central/cli"
 
 require 'open-uri'
 require 'highline/import'
+require 'pry'
+require 'nokogiri'
 
 module TutorialCentral
 end
