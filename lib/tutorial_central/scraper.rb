@@ -1,7 +1,3 @@
-require 'pry'
-require 'open-uri'
-require 'nokogiri'
-
 class TutorialCentral::Scraper
 
   def self.scrape_categories(url)

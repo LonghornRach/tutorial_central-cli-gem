@@ -1,8 +1,6 @@
 # TutorialCentral
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/tutorial_central`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
+This gem scrapes data from the website 'hackr.io', which is a repository of coding tutorials. Installing this gem allows you to browse the tutorials from the command line.
 
 ## Installation
 
@@ -22,7 +20,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+The command line prompts will guide you, but you will start off by choosing to either have the most recently posted tutorials displayed or browsing all of the categories. From there you can pick a specific tutorial and the program will show you its location.
 
 ## Development
 
