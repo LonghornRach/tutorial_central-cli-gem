@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'tutorial_central/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "tutorial_central-cli-gem"
+  spec.name          = "tutorial_central"
   spec.version       = TutorialCentral::VERSION
   spec.authors       = ["Rachel Stratemeier"]
   spec.email         = ["m.rachel.stratemeier@gmail.com"]
@@ -22,10 +22,9 @@ Gem::Specification.new do |spec|
   # end
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
-  # spec.bindir        = "exe"
   spec.executables   = ["tutorial_central"]
-  # spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib", "lib/tutorial_central"]
+  spec.bindir = "bin"
 
   spec.add_dependency "nokogiri", "~> 1.6"
   spec.add_dependency "highline", "~> 1.7"
@@ -34,4 +33,7 @@ Gem::Specification.new do |spec|
   spec.add_development_dependency "rake", "~> 10.0"
   spec.add_development_dependency "rspec", "~> 3.0"
   spec.add_development_dependency "pry", "~> 0.10"
+
+  spec.requirements << "nokogiri"
+  spec.requirements << "highline"
 end

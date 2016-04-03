@@ -4,6 +4,8 @@ This gem scrapes data from the website 'hackr.io', which is a repository of codi
 
 ## Installation
 
+Make sure you have the gems 'nokogiri' and 'highline' installed.
+
 Add this line to your application's Gemfile:
 
 ```ruby
