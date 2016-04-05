@@ -4,8 +4,6 @@ This gem scrapes data from the website 'hackr.io', which is a repository of codi
 
 ## Installation
 
-Make sure you have the gems 'nokogiri' and 'highline' installed.
-
 Add this line to your application's Gemfile:
 
 ```ruby
@@ -22,7 +20,7 @@ Or install it yourself as:
 
 ## Usage
 
-The command line prompts will guide you, but you will start off by choosing to either have the most recently posted tutorials displayed or browsing all of the categories. From there you can pick a specific tutorial and the program will show you its location.
+Run 'tutorial_central' to start the program. The command line prompts will guide you, but you will start off by choosing to either have the most recently posted tutorials displayed or browsing all of the categories. From there you can pick a specific tutorial and the program will show you its location.
 
 ## Development
 
@@ -32,7 +30,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/tutorial_central. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/LonghornRach/tutorial_central. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
 
 
 ## License
